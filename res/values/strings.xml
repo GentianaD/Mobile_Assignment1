@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GUC_activities</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register_std">RegisterStd</string>
+    <string name="title_activity_view_std">ViewStd</string>
+    <string name="title_activity_activities">Activities</string>
+    <string name="title_activity_reg">RegActivity</string>
+    <string name="title_activity_view_hangout">ViewHangout</string>
+    <string name="title_activity_map_view">MapView</string>
+    <string name="title_activity_map_google">MapGoogle</string>
+    <string name="title_activity_file_download">FileDownload</string>
+    <string name="btnInterStd">International Students</string>
+    <string name="btnActivities">Activities</string>
+    <string name="btnImage">Høgskolen i Gjøvik</string>
+    <string name="txtGjovik">Gjovik University</string>
+    <string name="btnIntStd">International Students</string>
+    <string name="hintTime">12:00PM or 13:30PM</string>
+    <string name="time">Time</string>
+    <string name="day">Day</string>
+    <string name="hintWhere">"The place "</string>
+    <string name="hintDisc">"eg. Party, Barbique "</string>
+    <string name="txtwhere">Where</string>
+    <string name="txtdis">Discription</string>
+    <string name="btnSubmitAct">Submit</string>
+    <string name="btnDeleteAct">Delete</string>
+    <string name="txtWhere">Where</string>
+    <string name="txtWhen">When</string>
+    <string name="hangout">"Hanging Out :) "</string>
+    <string name="enjoy">"Enjoy your free time :) "</string>
+    <string name="txtselectday">Select the day</string>
+    <string name="viewHangouts">View hangouts for the day selected</string>
+    <string name="createHangout">Create a hangout</string>
+    <string name="txtinfo">Informations</string>
+    <string name="StudentID">StudentID</string>
+    <string name="txtname">Name</string>
+    <string name="txtage">Age</string>
+    <string name="txtnationality">Nationality</string>
+    <string name="txtfavgame">Favourite game</string>
+    <string name="txtcontact">Contact</string>
+    <string name="btnViewStd">View</string>
+    <string name="btnRegStd">"Register "</string>
+    <string name="title_activity_image">Image</string>
+    <string name="title_activity_image_down">ImageDown</string>
+    <string name="title_activity_web_image">WebImage</string>
+    <string name="btnMap">Google Map</string>
+
+</resources>
