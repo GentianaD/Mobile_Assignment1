@@ -22,7 +22,7 @@
         android:textSize="16pt" />
 
     <Button
-        android:id="@+id/btnGUC"
+        android:id="@+id/btnHIGFoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnHangouts"
@@ -60,12 +60,12 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnGUC"
-        android:layout_alignRight="@+id/btnGUC"
-        android:layout_below="@+id/btnGUC"
-        android:layout_marginTop="24dp"
+        android:layout_alignLeft="@+id/btnHIGFoto"
+        android:layout_alignRight="@+id/btnHIGFoto"
+        android:layout_below="@+id/btnHIGFoto"
+        android:layout_marginTop="31dp"
+        android:onClick="MAP"
         android:text="@string/btnMap"
-        android:textSize="16pt"
-        android:onClick="MAP" />
+        android:textSize="16pt" />
 
 </RelativeLayout>

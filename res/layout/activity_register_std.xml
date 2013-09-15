@@ -135,7 +135,9 @@
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignLeft="@+id/etconatact"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number" >
+           <requestFocus />
+    </EditText>
 
     <EditText
         android:id="@+id/etage"
@@ -144,10 +146,9 @@
         android:layout_below="@+id/etname"
         android:layout_toRightOf="@+id/TextView02"
         android:ems="10"
-        android:inputType="number" >
+        android:inputType="number" />
 
-        <requestFocus />
-    </EditText>
+     
 
     <EditText
         android:id="@+id/etname"

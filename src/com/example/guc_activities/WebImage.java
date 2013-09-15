@@ -1,37 +1,19 @@
 package com.example.guc_activities;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-
-
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
+import java.util.Random;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 /**
  * Simple activity demonstrating the way a file can be downloaded 
@@ -48,10 +30,11 @@ import android.widget.TextView;
 public class WebImage extends Activity {
 
 	
-	final static String IMAGE_URL = "http://gtl-gear.appspot.com/static/img/gtl-logo_h57.png";
-	final static String TEXT_URL = "http://google.no";
-	final static String RSSFEED_URL = "http://rss.slashdot.org/Slashdot/slashdotGames";
-	final static String IMAGE_URL1="http://www.ikt-innlandet.no/wp-content/uploads/locations-pics/location-4.jpg";    
+	final static String IMAGE_URL1="http://www.ikt-innlandet.no/wp-content/uploads/locations-pics/location-4.jpg";
+	final static String IMAGE_URL2="http://g.api.no/obscura/API/image/r1/escenic/978x1200r/1331108938/archive/04207/hogskolen_gjovik_4207696a.jpg";
+	final static String IMAGE_URL3="http://upload.wikimedia.org/wikipedia/commons/c/cd/H%C3%B8gskolen_i_Gj%C3%B8vik.jpg";
+	final static String IMAGE_URL4="http://cp70.org/wp-content/uploads/2012/09/hig_studiestart_imagelarge.jpg";
+	final static String IMAGE_URL5="http://english.hig.no/var/ezwebin_site/storage/images/om_hig/arena_kallerud/arena_kallerud/154921-1-nor-NO/arena_kallerud_imagelarge.png";
 	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,7 +42,19 @@ public class WebImage extends Activity {
         setContentView(R.layout.activity_web_image);
         
         try {
-			new DownloadImageTask().execute(new URL(IMAGE_URL1));
+        	Random r=new Random();
+        	String finnalURL;
+        	int i = r.nextInt(5 - 1 + 1) + 1;
+        	switch (i)
+        	{
+        	case 1 : finnalURL=IMAGE_URL1; break;
+        	case 2 : finnalURL=IMAGE_URL2; break;
+        	case 3 : finnalURL=IMAGE_URL3; break;
+        	case 4 : finnalURL=IMAGE_URL4; break;
+        	default : finnalURL=IMAGE_URL5;
+        	
+        	}
+			new DownloadImageTask().execute(new URL(finnalURL));
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
